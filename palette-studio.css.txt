@@ -1,0 +1,528 @@
+<!--    PALETTE STUDIO — Автогенерированный CSS
+   Библиотека: Основная библиотека -->
+
+<style>
+:root {
+    /* DARK — Темные оттенки фона и элементов */
+    --dark-700: #151625; /* Тёмный основной 1/3 / Основной глубокий фон */
+    --dark-600: #28293D; /* Тёмный основной 2/3 / Контейнеры / Карточки */
+    --dark-500: #505060; /* Тёмный основной 3/3 / Поля ввода / Разделители */
+    --dark-400: #C7C9D9; /* Бледный тёмный 1/3 / Второстепенный текст / Иконки */
+    --dark-300: #D8D9E4; /* Бледный тёмный 2/3 / Текст средней контрастности */
+    --dark-200: #E9E9F0; /* Бледный тёмный 3/3 / Почти белый / Основной текст */
+    
+    /* LIGHT — Полупрозрачный белый под Glassmorphism */
+    --light-700: #EAEAF1; /* Нейтральный 1/5 / Белый 15% — тонкие обводки */
+    --light-600: #ECECF2; /* Нейтральный 2/5 / Интерактивные элементы */
+    --light-500: #F1F1F5; /* Нейтральный 3/5 / Иконки / заглушки */
+    --light-400: #F7F9FD; /* Нейтральный 4/5 / Второстепенный светлый текст */
+    --light-300: #FAFBFB; /* Нейтральный 5/5 / Читаемый текст на темном */
+    --light-200: #FFFFFF; /* Чистый белый / 100% */
+    
+    /* PRIMARY — Брендовые фиолетовые оттенки */
+    --primary-700: #ff247b; /* Акцент 1/3 / Акцентные кнопки / Главное состояние */
+    --primary-600: #774FE6; /* Акцент 2/3 / Ховеры кнопок */
+    --primary-500: #8F6EEB; /* Акцент 3/3 / Активный фокус / Свечение */
+    --primary-400: #DFD6F9; /* Бледный акцент 1/3 / Мягкий фиолетовый текст */
+    --primary-300: #EFEAFC; /* Бледный акцент 2/3 / Подложки меню / Элементы списков */
+    --primary-200: #FBFAFE; /* Бледный акцент 3/3 / Самый светлый фиолетовый фон */
+    
+    /* Blur Styles */
+    --blur-1: blur(4px);
+    --blur-2: blur(8px);
+    --blur-3: blur(16px);
+    --blur-4: blur(24px);
+    --blur-5: blur(32px);
+    --blur-6: blur(40px);
+    
+    /* Системные настройки анимации */
+    --site-transition: color 0.2s cubic-bezier(0, 0, 0.4, 1.0), background-color 0.2s cubic-bezier(0, 0, 0.4, 1.0), border-color 0.2s cubic-bezier(0, 0, 0.4, 1.0), opacity 0.2s cubic-bezier(0, 0, 0.4, 1.0);
+    --transform-transition: transform 0.25s cubic-bezier(0, 0, 0.4, 1.0);
+}
+</style>
+
+<style>
+/* Темы / модификаторы */
+
+/* ТЕМА: Светлая */
+:root, .style-light {
+    /* Переменная телефон */
+    /* Текст телефона */
+    --tel-text-color-default: var(--dark-700);
+    --tel-text-color-hover: color-mix(in srgb, var(--primary-700) 70%, transparent);
+    --tel-text-opacity-default: 1;
+    --tel-text-opacity-hover: 0.7;
+    
+    /* Стрелки телефона */
+    --arrow-bg-default: var(--primary-200);
+    --arrow-img-default: url(https://static.tildacdn.com/tild3366-6465-4161-a137-626466363862/svg_1782503391803.svg);
+    --arrow-border-default: 1px solid var(--primary-300);
+    --arrow-blur-default: none;
+    
+    /* Hover для стрелок телефона */
+    --arrow-bg-hover: var(--primary-700);
+    --arrow-img-hover: url(https://static.tildacdn.com/tild6465-3838-4530-a235-323930646264/_hover.svg);
+    --arrow-border-hover: 1px solid var(--primary-700);
+    --arrow-blur-hover: none;
+    
+    /* Переменная почта */
+    /* Текст почты */
+    --email-text-color-default: var(--dark-700);
+    --email-text-color-hover: color-mix(in srgb, var(--primary-700) 70%, transparent);
+    --email-text-opacity-default: 1;
+    --email-text-opacity-hover: 0.5;
+    
+    /* Переменная кнопки */
+    /* Кнопка с двигающейся стрелкой */
+    --btn-bg-default: var(--light-200);
+    --btn-bg-hover: var(--primary-700);
+    --btn-border-default: 1px solid var(--primary-300);
+    --btn-border-hover: 1px solid var(--primary-700);
+    --btn-text-default: var(--dark-700);
+    --btn-text-hover: var(--light-200);
+    --btn-arrow-default: url(https://static.tildacdn.com/tild3233-3862-4165-a362-313436333861/_.svg);
+    --btn-arrow-hover: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    
+    /* Переменная иконки магазина */
+    /* Общие настройки иконок */
+    --icon-bg-default: var(--light-200);
+    --icon-bg-hover: var(--primary-200);
+    --icon-blur-default: none;
+    --icon-blur-hover: none;
+    --icon-border: 1px solid var(--primary-300);
+    --icon-border-hover: 1px solid var(--primary-300);
+    --icon-radius-default: 12px;
+    --icon-radius-hover: 50%;
+    --icon-transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s cubic-bezier(0, 0, 0.4, 1.0), backdrop-filter 0.3s ease;
+    
+    /* Избранное */
+    --img-fav-default: url(https://static.tildacdn.com/tild3236-6632-4861-b433-636539393836/_1.svg);
+    --img-fav-hover: url(https://static.tildacdn.com/tild3039-6633-4238-a664-653564653537/_2.svg);
+    
+    /* Корзина */
+    --img-bask-default: url(https://static.tildacdn.com/tild3436-3061-4864-b338-633561383866/Property_1Default.svg);
+    --img-bask-hover: url(https://static.tildacdn.com/tild6662-3335-4437-a565-613366346633/2.svg);
+    
+    /* Офис / магазины */
+    --img-off-default: url(https://static.tildacdn.com/tild6461-3737-4438-b661-633839313664/svg_1782493738807.svg);
+    --img-off-hover: url(https://static.tildacdn.com/tild3535-3562-4237-a132-633464373365/svg_1782491312567.svg);
+    
+    /* Поиск */
+    --img-srch-default: url(https://static.tildacdn.com/tild3266-6366-4236-a166-303562363865/svg_1782493798007.svg);
+    --img-srch-hover: url(https://static.tildacdn.com/tild3562-3230-4638-b630-303235643039/svg_1782491262798.svg);
+    
+    /* Стрелки карусели */
+    --img-arrow-l-default: url(https://static.tildacdn.com/tild3464-3237-4338-b262-663162313933/photo.svg);
+    --img-arrow-r-default: url(https://static.tildacdn.com/tild6138-6235-4633-b462-383438343933/photo.svg);
+    --img-arrow-l-hover: url(https://static.tildacdn.com/tild6663-6262-4564-b939-393263653561/_.svg);
+    --img-arrow-r-hover: url(https://static.tildacdn.com/tild3865-6631-4263-b536-656332316664/_.svg);
+}
+
+/* ТЕМА: Тёмная */
+.style-dark {
+    /* Переменная телефон */
+    /* Текст телефона */
+    --tel-text-color-default: var(--dark-700);
+    --tel-text-color-hover: color-mix(in srgb, var(--dark-200) 70%, transparent);
+    --tel-text-opacity-default: 1;
+    --tel-text-opacity-hover: 0.7;
+    
+    /* Стрелки телефона */
+    --arrow-bg-default: var(--dark-600);
+    --arrow-img-default: url(https://static.tildacdn.com/tild6465-3838-4530-a235-323930646264/_hover.svg);
+    --arrow-border-default: 1px solid var(--dark-500);
+    --arrow-blur-default: none;
+    
+    /* Hover для стрелок телефона */
+    --arrow-bg-hover: var(--light-200);
+    --arrow-img-hover: url(https://static.tildacdn.com/tild3366-6465-4161-a137-626466363862/svg_1782503391803.svg);
+    --arrow-border-hover: 1px solid var(--light-200);
+    --arrow-blur-hover: none;
+    
+    /* Переменная почта */
+    /* Текст почты */
+    --email-text-color-default: var(--dark-700);
+    --email-text-color-hover: color-mix(in srgb, var(--dark-200) 70%, transparent);
+    --email-text-opacity-default: 1;
+    --email-text-opacity-hover: 0.5;
+    
+    /* Переменная кнопки */
+    /* Кнопка с двигающейся стрелкой */
+    --btn-bg-default: var(--dark-600);
+    --btn-bg-hover: var(--light-200);
+    --btn-border-default: 1px solid var(--dark-500);
+    --btn-border-hover: 1px solid var(--light-200);
+    --btn-text-default: var(--light-200);
+    --btn-text-hover: var(--dark-700);
+    --btn-arrow-default: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    --btn-arrow-hover: url(https://static.tildacdn.com/tild3333-3234-4936-b764-343936626330/ArrowsDirections.svg);
+    
+    /* Переменная иконки магазина */
+    /* Общие настройки иконок */
+    --icon-bg-default: var(--light-200);
+    --icon-bg-hover: var(--dark-600);
+    --icon-blur-default: none;
+    --icon-blur-hover: none;
+    --icon-border: 1px solid var(--primary-300);
+    --icon-border-hover: 1px solid var(--dark-600);
+    --icon-radius-default: 12px;
+    --icon-radius-hover: 50%;
+    --icon-transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s cubic-bezier(0, 0, 0.4, 1.0), backdrop-filter 0.3s ease;
+    
+    /* Избранное */
+    --img-fav-default: url(https://static.tildacdn.com/tild3236-6632-4861-b433-636539393836/_1.svg);
+    --img-fav-hover: url(https://static.tildacdn.com/tild6231-3238-4236-a637-383061353633/_3.svg);
+    
+    /* Корзина */
+    --img-bask-default: url(https://static.tildacdn.com/tild3436-3061-4864-b338-633561383866/Property_1Default.svg);
+    --img-bask-hover: url(https://static.tildacdn.com/tild6363-3863-4562-b532-323966633534/3.svg);
+    
+    /* Офис / магазины */
+    --img-off-default: url(https://static.tildacdn.com/tild6461-3737-4438-b661-633839313664/svg_1782493738807.svg);
+    --img-off-hover: url(https://static.tildacdn.com/tild3331-3164-4434-b661-303337666139/_hover.svg);
+    
+    /* Поиск */
+    --img-srch-default: url(https://static.tildacdn.com/tild3266-6366-4236-a166-303562363865/svg_1782493798007.svg);
+    --img-srch-hover: url(https://static.tildacdn.com/tild3165-3131-4563-b164-623966376531/_hover.svg);
+    
+    /* Стрелки карусели */
+    --img-arrow-l-default: url(https://static.tildacdn.com/tild3464-3237-4338-b262-663162313933/photo.svg);
+    --img-arrow-r-default: url(https://static.tildacdn.com/tild6138-6235-4633-b462-383438343933/photo.svg);
+    --img-arrow-l-hover: url(https://static.tildacdn.com/tild6362-6333-4831-b465-396236636361/_.svg);
+    --img-arrow-r-hover: url(https://static.tildacdn.com/tild3734-6539-4630-a465-623663306362/_.svg);
+}
+
+/* ТЕМА: Акцентная */
+.style-accent {
+    /* Переменная телефон */
+    /* Текст телефона */
+    --tel-text-color-default: var(--dark-700);
+    --tel-text-color-hover: var(--primary-700);
+    --tel-text-opacity-default: 1;
+    --tel-text-opacity-hover: 0.7;
+    
+    /* Стрелки телефона */
+    --arrow-bg-default: var(--light-200);
+    --arrow-img-default: url(https://static.tildacdn.com/tild6637-3339-4535-a131-353162353138/frnbdyfz.svg);
+    --arrow-border-default: 1px solid var(--primary-300);
+    --arrow-blur-default: none;
+    
+    /* Hover для стрелок телефона */
+    --arrow-bg-hover: var(--primary-700);
+    --arrow-img-hover: url(https://static.tildacdn.com/tild6465-3838-4530-a235-323930646264/_hover.svg);
+    --arrow-border-hover: 1px solid var(--primary-700);
+    --arrow-blur-hover: none;
+    
+    /* Переменная почта */
+    /* Текст почты */
+    --email-text-color-default: var(--dark-700);
+    --email-text-color-hover: var(--primary-700);
+    --email-text-opacity-default: 1;
+    --email-text-opacity-hover: 0.5;
+    
+    /* Переменная кнопки */
+    /* Кнопка с двигающейся стрелкой */
+    --btn-bg-default: var(--light-200);
+    --btn-bg-hover: var(--primary-700);
+    --btn-border-default: 1px solid var(--primary-300);
+    --btn-border-hover: 1px solid var(--primary-700);
+    --btn-text-default: var(--dark-700);
+    --btn-text-hover: var(--light-200);
+    --btn-arrow-default: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    --btn-arrow-hover: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    
+    /* Переменная иконки магазина */
+    /* Общие настройки иконок */
+    --icon-bg-default: var(--light-200);
+    --icon-bg-hover: var(--primary-700);
+    --icon-blur-default: none;
+    --icon-blur-hover: none;
+    --icon-border: 1px solid var(--primary-300);
+    --icon-border-hover: 1px solid var(--primary-700);
+    --icon-radius-default: 12px;
+    --icon-radius-hover: 50%;
+    --icon-transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s cubic-bezier(0, 0, 0.4, 1.0), backdrop-filter 0.3s ease;
+    
+    /* Избранное */
+    --img-fav-default: url(https://static.tildacdn.com/tild3236-6632-4861-b433-636539393836/_1.svg);
+    --img-fav-hover: url(https://static.tildacdn.com/tild3039-6633-4238-a664-653564653537/_2.svg);
+    
+    /* Корзина */
+    --img-bask-default: url(https://static.tildacdn.com/tild3436-3061-4864-b338-633561383866/Property_1Default.svg);
+    --img-bask-hover: url(https://static.tildacdn.com/tild6662-3335-4437-a565-613366346633/2.svg);
+    
+    /* Офис / магазины */
+    --img-off-default: url(https://static.tildacdn.com/tild6461-3737-4438-b661-633839313664/svg_1782493738807.svg);
+    --img-off-hover: url(https://static.tildacdn.com/tild3535-3562-4237-a132-633464373365/svg_1782491312567.svg);
+    
+    /* Поиск */
+    --img-srch-default: url(https://static.tildacdn.com/tild3266-6366-4236-a166-303562363865/svg_1782493798007.svg);
+    --img-srch-hover: url(https://static.tildacdn.com/tild3562-3230-4638-b630-303235643039/svg_1782491262798.svg);
+    
+    /* Стрелки карусели */
+    --img-arrow-l-default: url(https://static.tildacdn.com/tild3464-3237-4338-b262-663162313933/photo.svg);
+    --img-arrow-r-default: url(https://static.tildacdn.com/tild6138-6235-4633-b462-383438343933/photo.svg);
+    --img-arrow-l-hover: url(https://static.tildacdn.com/tild6663-6262-4564-b939-393263653561/_.svg);
+    --img-arrow-r-hover: url(https://static.tildacdn.com/tild3865-6631-4263-b536-656332316664/_.svg);
+}
+
+/* ТЕМА: Мягкая */
+.style-soft {
+    /* Переменная телефон */
+    /* Текст телефона */
+    --tel-text-color-default: var(--primary-700);
+    --tel-text-color-hover: color-mix(in srgb, var(--primary-700) 70%, transparent);
+    --tel-text-opacity-default: 1;
+    --tel-text-opacity-hover: 0.7;
+    
+    /* Стрелки телефона */
+    --arrow-bg-default: var(--primary-200);
+    --arrow-img-default: url(https://static.tildacdn.com/tild6637-3339-4535-a131-353162353138/frnbdyfz.svg);
+    --arrow-border-default: 1px solid var(--primary-300);
+    --arrow-blur-default: none;
+    
+    /* Hover для стрелок телефона */
+    --arrow-bg-hover: var(--primary-200);
+    --arrow-img-hover: url(https://static.tildacdn.com/tild6637-3339-4535-a131-353162353138/frnbdyfz.svg);
+    --arrow-border-hover: 1px solid var(--primary-700);
+    --arrow-blur-hover: none;
+    
+    /* Переменная почта */
+    /* Текст почты */
+    --email-text-color-default: var(--primary-700);
+    --email-text-color-hover: color-mix(in srgb, var(--primary-700) 70%, transparent);
+    --email-text-opacity-default: 1;
+    --email-text-opacity-hover: 0.5;
+    
+    /* Переменная кнопки */
+    /* Кнопка с двигающейся стрелкой */
+    --btn-bg-default: var(--light-200);
+    --btn-bg-hover: var(--primary-700);
+    --btn-border-default: 1px solid var(--primary-300);
+    --btn-border-hover: 1px solid var(--primary-700);
+    --btn-text-default: var(--dark-700);
+    --btn-text-hover: var(--light-200);
+    --btn-arrow-default: url(https://static.tildacdn.com/tild3233-3862-4165-a362-313436333861/_.svg);
+    --btn-arrow-hover: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    
+    /* Переменная иконки магазина */
+    /* Общие настройки иконок */
+    --icon-bg-default: var(--primary-200);
+    --icon-bg-hover: var(--light-200);
+    --icon-blur-default: none;
+    --icon-blur-hover: none;
+    --icon-border: 1px solid var(--primary-200);
+    --icon-border-hover: 1px solid var(--primary-700);
+    --icon-radius-default: 12px;
+    --icon-radius-hover: 50%;
+    --icon-transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s cubic-bezier(0, 0, 0.4, 1.0), backdrop-filter 0.3s ease;
+    
+    /* Избранное */
+    --img-fav-default: url(https://static.tildacdn.com/tild3039-6633-4238-a664-653564653537/_2.svg);
+    --img-fav-hover: url(https://static.tildacdn.com/tild3039-6633-4238-a664-653564653537/_2.svg);
+    
+    /* Корзина */
+    --img-bask-default: url(https://static.tildacdn.com/tild6662-3335-4437-a565-613366346633/2.svg);
+    --img-bask-hover: url(https://static.tildacdn.com/tild6662-3335-4437-a565-613366346633/2.svg);
+    
+    /* Офис / магазины */
+    --img-off-default: url(https://static.tildacdn.com/tild3535-3562-4237-a132-633464373365/svg_1782491312567.svg);
+    --img-off-hover: url(https://static.tildacdn.com/tild3535-3562-4237-a132-633464373365/svg_1782491312567.svg);
+    
+    /* Поиск */
+    --img-srch-default: url(https://static.tildacdn.com/tild3562-3230-4638-b630-303235643039/svg_1782491262798.svg);
+    --img-srch-hover: url(https://static.tildacdn.com/tild3562-3230-4638-b630-303235643039/svg_1782491262798.svg);
+    
+    /* Стрелки карусели */
+    --img-arrow-l-default: url(https://static.tildacdn.com/tild3464-3237-4338-b262-663162313933/photo.svg);
+    --img-arrow-r-default: url(https://static.tildacdn.com/tild6138-6235-4633-b462-383438343933/photo.svg);
+    --img-arrow-l-hover: url(https://static.tildacdn.com/tild6663-6262-4564-b939-393263653561/_.svg);
+    --img-arrow-r-hover: url(https://static.tildacdn.com/tild3865-6631-4263-b536-656332316664/_.svg);
+}
+
+/* ТЕМА: С эффектом блюра */
+.style-blur {
+    /* Переменная телефон */
+    /* Текст телефона */
+    --tel-text-color-default: var(--light-200);
+    --tel-text-color-hover: color-mix(in srgb, var(--light-200) 70%, transparent);
+    --tel-text-opacity-default: 1;
+    --tel-text-opacity-hover: 0.7;
+    
+    /* Стрелки телефона */
+    --arrow-bg-default: rgba(255, 255, 255, 0.05);
+    --arrow-img-default: url(https://static.tildacdn.com/tild6465-3838-4530-a235-323930646264/_hover.svg);
+    --arrow-border-default: 1px solid rgba(255, 255, 255, 0.15);
+    --arrow-blur-default: var(--blur-1);
+    
+    /* Hover для стрелок телефона */
+    --arrow-bg-hover: rgba(255, 255, 255, 0.15);
+    --arrow-img-hover: url(https://static.tildacdn.com/tild6637-3339-4535-a131-353162353138/frnbdyfz.svg);
+    --arrow-border-hover: 1px solid rgba(255, 255, 255, 0.3);
+    --arrow-blur-hover: var(--blur-2);
+    
+    /* Переменная почта */
+    /* Текст почты */
+    --email-text-color-default: var(--light-200);
+    --email-text-color-hover: color-mix(in srgb, var(--light-200) 70%, transparent);
+    --email-text-opacity-default: 1;
+    --email-text-opacity-hover: 0.5;
+    
+    /* Переменная кнопки */
+    /* Кнопка с двигающейся стрелкой */
+    --btn-bg-default: var(--light-200);
+    --btn-bg-hover: var(--primary-700);
+    --btn-border-default: 1px solid var(--primary-300);
+    --btn-border-hover: 1px solid var(--primary-700);
+    --btn-text-default: var(--dark-700);
+    --btn-text-hover: var(--light-200);
+    --btn-arrow-default: url(https://static.tildacdn.com/tild3233-3862-4165-a362-313436333861/_.svg);
+    --btn-arrow-hover: url(https://static.tildacdn.com/tild3533-3032-4766-b136-393333373666/ArrowsDirections_.svg);
+    
+    /* Переменная иконки магазина */
+    /* Общие настройки иконок */
+    --icon-bg-default: rgba(255, 255, 255, 0.05);
+    --icon-bg-hover: rgba(255, 255, 255, 0.15);
+    --icon-blur-default: var(--blur-1);
+    --icon-blur-hover: var(--blur-2);
+    --icon-border: 1px solid rgba(255, 255, 255, 0.2);
+    --icon-border-hover: 1px solid rgba(255, 255, 255, 0.5);
+    --icon-radius-default: 12px;
+    --icon-radius-hover: 50%;
+    --icon-transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s cubic-bezier(0, 0, 0.4, 1.0), backdrop-filter 0.3s ease;
+    
+    /* Избранное */
+    --img-fav-default: url(https://static.tildacdn.com/tild6231-3238-4236-a637-383061353633/_3.svg);
+    --img-fav-hover: url(https://static.tildacdn.com/tild6231-3238-4236-a637-383061353633/_3.svg);
+    
+    /* Корзина */
+    --img-bask-default: url(https://static.tildacdn.com/tild6363-3863-4562-b532-323966633534/3.svg);
+    --img-bask-hover: url(https://static.tildacdn.com/tild6363-3863-4562-b532-323966633534/3.svg);
+    
+    /* Офис / магазины */
+    --img-off-default: url(https://static.tildacdn.com/tild3331-3164-4434-b661-303337666139/_hover.svg);
+    --img-off-hover: url(https://static.tildacdn.com/tild3331-3164-4434-b661-303337666139/_hover.svg);
+    
+    /* Поиск */
+    --img-srch-default: url(https://static.tildacdn.com/tild3165-3131-4563-b164-623966376531/_hover.svg);
+    --img-srch-hover: url(https://static.tildacdn.com/tild3165-3131-4563-b164-623966376531/_hover.svg);
+    
+    /* Стрелки карусели */
+    --img-arrow-l-default: url(https://static.tildacdn.com/tild6362-6333-4831-b465-396236636361/_.svg);
+    --img-arrow-r-default: url(https://static.tildacdn.com/tild3734-6539-4630-a465-623663306362/_.svg);
+    --img-arrow-l-hover: url(https://static.tildacdn.com/tild6362-6333-4831-b465-396236636361/_.svg);
+    --img-arrow-r-hover: url(https://static.tildacdn.com/tild3734-6539-4630-a465-623663306362/_.svg);
+}
+</style>
+
+<style>
+/* ========================================================
+   КОМПОНЕНТЫ UI
+   ======================================================== */
+
+.text-tel-menu {
+    color: var(--tel-text-color-default);
+    opacity: var(--tel-text-opacity-default);
+    transition: var(--site-transition);
+}
+.stack-tel-menu:hover .text-tel-menu {
+    color: var(--tel-text-color-hover);
+    opacity: var(--tel-text-opacity-hover);
+}
+.text-tel-arrow {
+    visibility: visible;
+    background-color: var(--arrow-bg-default);
+    background-image: var(--arrow-img-default);
+    border: var(--arrow-border-default);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 64px;
+    opacity: 1;
+    z-index: 10;
+    backdrop-filter: var(--arrow-blur-default);
+    -webkit-backdrop-filter: var(--arrow-blur-default);
+    transition: var(--site-transition);
+}
+.stack-tel-menu:hover .text-tel-arrow {
+    background-color: var(--arrow-bg-hover);
+    background-image: var(--arrow-img-hover);
+    border: var(--arrow-border-hover);
+    backdrop-filter: var(--arrow-blur-hover);
+    -webkit-backdrop-filter: var(--arrow-blur-hover);
+}
+
+.text-email-menu {
+    color: var(--email-text-color-default);
+    opacity: var(--email-text-opacity-default);
+    transition: var(--site-transition);
+}
+.text-email-menu:hover {
+    color: var(--email-text-color-hover);
+    opacity: var(--email-text-opacity-hover);
+}
+
+.btn-flex-1 {
+    border-radius: 0;
+    cursor: pointer;
+    border: var(--btn-border-default);
+    background: var(--btn-bg-default);
+    backdrop-filter: var(--arrow-blur-default);
+    -webkit-backdrop-filter: var(--arrow-blur-default);
+    transition: var(--site-transition);
+}
+.btn-flex-1:hover {
+    background: var(--btn-bg-hover);
+    border: var(--btn-border-hover);
+}
+.btn-flex-text-1 {
+    color: var(--btn-text-default);
+    transition: var(--site-transition);
+}
+.btn-flex-1:hover .btn-flex-text-1 {
+    color: var(--btn-text-hover);
+}
+.btn-flex-arrow-1 {
+    background-image: var(--btn-arrow-default);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    transition: var(--site-transition), var(--transform-transition);
+}
+.btn-flex-1:hover .btn-flex-arrow-1 {
+    background-image: var(--btn-arrow-hover);
+    z-index: 12;
+    transform: rotate(45deg);
+}
+
+.favourites-icon, .basket-icon, .office-icon, .search-icon, .arrow-l-icon, .arrow-r-icon {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    border: var(--icon-border);
+    border-radius: var(--icon-radius-default) !important;
+    backdrop-filter: var(--icon-blur-default);
+    -webkit-backdrop-filter: var(--icon-blur-default);
+    transition: var(--icon-transition);
+}
+.favourites-icon:hover, .basket-icon:hover, .office-icon:hover, .search-icon:hover, .arrow-l-icon:hover, .arrow-r-icon:hover {
+    border: var(--icon-border-hover);
+    border-radius: var(--icon-radius-hover) !important;
+    backdrop-filter: var(--icon-blur-hover);
+    -webkit-backdrop-filter: var(--icon-blur-hover);
+    z-index: 12;
+}
+.favourites-icon { background-color: var(--icon-bg-default); background-image: var(--img-fav-default); }
+.favourites-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-fav-hover); }
+.basket-icon { background-color: var(--icon-bg-default); background-image: var(--img-bask-default); }
+.basket-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-bask-hover); }
+.office-icon { background-color: var(--icon-bg-default); background-image: var(--img-off-default); }
+.office-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-off-hover); }
+.search-icon { background-color: var(--icon-bg-default); background-image: var(--img-srch-default); z-index: 10; }
+.search-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-srch-hover); }
+.arrow-l-icon { background-color: var(--icon-bg-default); background-image: var(--img-arrow-l-default); }
+.arrow-l-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-arrow-l-hover); }
+.arrow-r-icon { background-color: var(--icon-bg-default); background-image: var(--img-arrow-r-default); }
+.arrow-r-icon:hover { background-color: var(--icon-bg-hover); background-image: var(--img-arrow-r-hover); }
+</style>
